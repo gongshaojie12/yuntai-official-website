@@ -145,6 +145,12 @@ img { max-width: 100%; height: auto; }
   width: 72px; height: 72px; border-radius: 16px;
   flex-shrink: 0;
 }
+.app-card img.app-icon-contain {
+  object-fit: contain;
+  background: #fff;
+  padding: 6px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+}
 .app-card.app-card-static { cursor: default; }
 .app-card.app-card-static:hover { transform: none; box-shadow: var(--shadow); }
 .app-icon-text {
