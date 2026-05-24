@@ -3,8 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuntai — Mobile Apps for Everyday Life</title>
-  <meta name="description" content="Yuntai builds thoughtful mobile applications. Explore our apps designed to make everyday tasks simpler and more enjoyable.">
+  <title>Yuntai 云苔 — Tiny digital products for everyday life</title>
+  <meta name="description" content="Yuntai (云苔) is an indie studio building mobile apps, web tools, and mini programs that quietly make everyday life simpler. Shanghai Yuntai Information Technology Co., Ltd.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yuntai.tech/">
+  <meta property="og:title" content="Yuntai 云苔 — Tiny digital products for everyday life">
+  <meta property="og:description" content="Indie studio building mobile apps, web tools, and mini programs. Slow growing, broad covering — like moss.">
+  <meta property="og:image" content="https://yuntai.tech/assets/images/og-image.png">
+  <meta property="og:site_name" content="Yuntai">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yuntai 云苔 — Tiny digital products for everyday life">
+  <meta name="twitter:description" content="Indie studio building mobile apps, web tools, and mini programs.">
+  <meta name="twitter:image" content="https://yuntai.tech/assets/images/og-image.png">
+
+  <!-- Pinterest Domain Claim (paste verification token here after Pinterest gives it) -->
+  <!-- <meta name="p:domain_verify" content="YOUR_PINTEREST_TOKEN_HERE"/> -->
+
+  <link rel="canonical" href="https://yuntai.tech/">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/images/growbook_icon.png" type="image/png">
 </head>
@@ -14,14 +33,16 @@
   <div class="container">
     <a href="index.html" class="nav-brand">
       <svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="13" stroke="#2E7D32" stroke-width="2"/><path d="M14 7v10M10 12l4-5 4 5" stroke="#43A047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20c2-2 4-3 5-3s3 1 5 3" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/></svg>
-      Yuntai
+      <span class="brand-text">Yuntai<span class="brand-zh">云苔</span></span>
     </a>
     <button class="nav-toggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="growbook/index.html">GrowBook</a></li>
+      <li><a href="#mobile-apps">Mobile Apps</a></li>
+      <li><a href="#web-tools">Web Tools</a></li>
+      <li><a href="#mini-programs">Mini Programs</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="mailto:admin@yuntai.tech">Contact</a></li>
     </ul>
   </div>
@@ -29,14 +50,21 @@
 
 <section class="hero">
   <div class="container">
-    <h1>Yuntai</h1>
-    <p>We build thoughtful mobile applications that make everyday life simpler and more enjoyable.</p>
+    <h1>Yuntai <span class="hero-zh">云苔</span></h1>
+    <p class="hero-tagline">An indie studio building small, useful digital products — mobile apps, web tools, mini programs. Slow growing, broad covering — like moss.</p>
+    <div class="hero-meta">
+      <a href="#mobile-apps" class="btn btn-primary">Explore Products</a>
+    </div>
   </div>
 </section>
 
-<section class="apps-section">
+<!-- ────────── Mobile Apps ────────── -->
+<section id="mobile-apps" class="category-section">
   <div class="container">
-    <h2>Our Apps</h2>
+    <div class="section-head">
+      <h2>Mobile Apps</h2>
+      <p class="section-desc">Native applications on iOS / Android, distributed through official app stores.</p>
+    </div>
     <div class="apps-grid">
 
       <a href="growbook/index.html" class="app-card fade-in">
@@ -44,7 +72,7 @@
         <div>
           <h3>GrowBook</h3>
           <p>Your personal plant care companion. Track watering schedules, log growth observations, identify plants with AI, and keep every green friend thriving.</p>
-          <span class="badge">Available on Google Play</span>
+          <span class="badge badge-soon">Coming Soon on Google Play</span>
         </div>
       </a>
 
@@ -52,12 +80,90 @@
   </div>
 </section>
 
+<!-- ────────── Web Tools ────────── -->
+<section id="web-tools" class="category-section alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Web Tools</h2>
+      <p class="section-desc">Browser-based products. No install, just open and use.</p>
+    </div>
+    <div class="apps-grid">
+
+      <a href="https://omniemoji.com" target="_blank" rel="noopener" class="app-card fade-in">
+        <div class="app-icon-text" style="--icon-bg:#a566ff;">😊</div>
+        <div>
+          <h3>OmniEmoji</h3>
+          <p>AI-powered emoji generator SaaS. Turn any idea into a custom emoji in seconds — perfect for chat, Discord, Slack, and team branding.</p>
+          <span class="badge badge-live">Live · omniemoji.com</span>
+        </div>
+      </a>
+
+      <a href="https://makelineart.com" target="_blank" rel="noopener" class="app-card fade-in">
+        <div class="app-icon-text" style="--icon-bg:#7c8cff;">✏️</div>
+        <div>
+          <h3>MakeLineArt</h3>
+          <p>A collection of 19 handcraft tools — cross-stitch pattern maker, coloring page generator, tattoo line-art converter and more. Powered by OpenCV in the browser.</p>
+          <span class="badge badge-live">Live · makelineart.com</span>
+        </div>
+      </a>
+
+      <a href="https://taplup.com" target="_blank" rel="noopener" class="app-card fade-in">
+        <div class="app-icon-text" style="--icon-bg:#46d4b3;">🎮</div>
+        <div>
+          <h3>Taplup</h3>
+          <p>A curated hub of H5 mini games. Open and play instantly in any browser — no download, no account, just tap and lift off.</p>
+          <span class="badge badge-live">Live · taplup.com</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ────────── Mini Programs ────────── -->
+<section id="mini-programs" class="category-section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Mini Programs <span class="section-zh">小程序</span></h2>
+      <p class="section-desc">Lightweight experiences inside WeChat / Douyin / Kuaishou, plus H5 web versions.</p>
+    </div>
+    <div class="apps-grid">
+
+      <div class="app-card fade-in app-card-static">
+        <div class="app-icon-text" style="--icon-bg:#ffb45b;">🌱</div>
+        <div>
+          <h3>草呢 <span class="title-en">Caone</span></h3>
+          <p>A small game for office workers — quick, lighthearted moments of distraction between meetings. Available on WeChat / Douyin / Kuaishou mini programs and H5.</p>
+          <span class="badge badge-soon">In Development</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ────────── Experiments ────────── -->
+<section id="experiments" class="category-section alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Experiments</h2>
+      <p class="section-desc">Smaller bets, prototypes, and things still finding their shape. Check back as they grow up.</p>
+    </div>
+    <div class="empty-state">
+      <p>More projects are quietly sprouting. <a href="mailto:admin@yuntai.tech">Drop a note</a> if you'd like to know when the next one launches.</p>
+    </div>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="container">
     <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
       <a href="mailto:admin@yuntai.tech">admin@yuntai.tech</a>
     </div>
-    <p>&copy; 2026 Shanghai Yuntai Information Technology Co., Ltd. All rights reserved.</p>
+    <p>&copy; 2026 Shanghai Yuntai Information Technology Co., Ltd. · 上海云苔信息技术有限公司</p>
   </div>
 </footer>
 
